@@ -1,0 +1,115 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background: hsl(30, 54%, 90%);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 650px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+h2 {
+  font: 400 16px "YoungSerif", "sans-serif";
+  font-size: 26px;
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+h3 {
+  font: 700 16px "Outfit", "sans-serif";
+  color: hsl(332, 51%, 32%);
+}
+
+li {
+  font: 400 16px "Outfit", "sans-serif";
+  padding-left: 20px;
+  line-height: 2;
+}
+li::marker {
+  color: hsl(14, 45%, 36%);
+}
+li span {
+  font: 700 16px "Outfit", "sans-serif";
+  color: hsl(30, 10%, 34%);
+}
+
+.outerBox {
+  display: flex;
+  background: hsl(0, 0%, 100%);
+  padding: 20px;
+  margin: 50px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.innerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.innerBox img {
+  width: 100%;
+  border-radius: 10px;
+}
+.innerBox h1 {
+  font: 400 16px "YoungSerif", "sans-serif";
+  font-weight: bold;
+  font-size: 30px;
+}
+.innerBox p {
+  font: 400 16px "Outfit", "sans-serif";
+}
+
+.timeBox {
+  background: hsl(330, 100%, 98%);
+  width: 100%;
+  border-radius: 10px;
+}
+.timeBox div {
+  padding: 20px;
+}
+
+.tableBox {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table caption {
+  text-align: left;
+  line-height: 1.5;
+  font: 400 16px "Outfit", "sans-serif";
+  padding-bottom: 20px;
+}
+table tr {
+  text-align: left;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+table th {
+  font: 400 16px "Outfit", "sans-serif";
+  padding: 10px 0;
+}
+table td {
+  font: 600 16px "Outfit", "sans-serif";
+  color: hsl(14, 45%, 36%);
+}
+
+/*# sourceMappingURL=style.css.map */
