@@ -9,6 +9,8 @@
 
 body {
   background: hsl(30, 54%, 90%);
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .box {
@@ -54,6 +56,12 @@ li span {
   border-radius: 20px;
   width: 100%;
 }
+@media screen and (max-width: 375px) {
+  .outerBox {
+    margin: 0;
+    padding: 0;
+  }
+}
 
 .innerBox {
   display: flex;
@@ -63,30 +71,81 @@ li span {
   gap: 10px;
   width: 100%;
 }
+@media screen and (max-width: 375px) {
+  .innerBox {
+    width: auto;
+  }
+}
 .innerBox img {
   width: 100%;
   border-radius: 10px;
+}
+@media screen and (max-width: 375px) {
+  .innerBox img {
+    border-radius: 0;
+  }
 }
 .innerBox h1 {
   font: 400 16px "YoungSerif", "sans-serif";
   font-weight: bold;
   font-size: 30px;
 }
+@media screen and (max-width: 375px) {
+  .innerBox h1 {
+    padding: 20px;
+  }
+}
 .innerBox p {
   font: 400 16px "Outfit", "sans-serif";
+}
+@media screen and (max-width: 375px) {
+  .innerBox p {
+    padding: 20px;
+  }
+}
+
+.ingredientsBox {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+@media screen and (max-width: 375px) {
+  .ingredientsBox {
+    padding: 20px;
+  }
+}
+
+.instructionsBox {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+@media screen and (max-width: 375px) {
+  .instructionsBox {
+    padding: 20px;
+  }
 }
 
 .timeBox {
   background: hsl(330, 100%, 98%);
-  width: 100%;
   border-radius: 10px;
+  border-bottom: none;
 }
 .timeBox div {
   padding: 20px;
 }
+@media screen and (max-width: 375px) {
+  .timeBox {
+    margin: 0 20px;
+  }
+}
 
 .tableBox {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
   width: 100%;
+}
+@media screen and (max-width: 375px) {
+  .tableBox > div {
+    padding: 20px;
+  }
 }
 
 table {
@@ -99,9 +158,19 @@ table caption {
   font: 400 16px "Outfit", "sans-serif";
   padding-bottom: 20px;
 }
+@media screen and (max-width: 375px) {
+  table caption {
+    text-align: center;
+  }
+}
 table tr {
   text-align: left;
   border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+@media screen and (max-width: 375px) {
+  table tr {
+    text-align: center;
+  }
 }
 table th {
   font: 400 16px "Outfit", "sans-serif";

@@ -8,6 +8,8 @@
 
 body {
 	background: $eggShell-color;
+	margin: 0;
+	box-sizing: border-box;
 }
 .box {
 	display: flex;
@@ -53,6 +55,11 @@ li {
 	margin: 50px;
 	border-radius: 20px;
 	width: 100%;
+
+	@media screen and (max-width: 375px) {
+		margin: 0;
+		padding: 0;
+	}
 }
 
 .innerBox {
@@ -63,49 +70,99 @@ li {
 	gap: 10px;
 	width: 100%;
 
+	@media screen and (max-width: 375px) {
+		width: auto;
+	}
+
 	& img {
 		width: 100%;
 		border-radius: 10px;
+
+		@media screen and (max-width: 375px) {
+			border-radius: 0;
+		}
 	}
 
 	& h1 {
 		font: $primaryFont-light;
 		font-weight: bold;
 		font-size: 30px;
+
+		@media screen and (max-width: 375px) {
+			padding: 20px;
+		}
 	}
 
 	& p {
 		font: $secondaryFont-light;
+		@media screen and (max-width: 375px) {
+			padding: 20px;
+		}
+	}
+}
+
+.ingredientsBox {
+	border-bottom: 1px solid $lightGrey-color;
+	@media screen and (max-width: 375px) {
+		padding: 20px;
+	}
+}
+
+.instructionsBox {
+	border-bottom: 1px solid $lightGrey-color;
+
+	@media screen and (max-width: 375px) {
+		padding: 20px;
 	}
 }
 
 .timeBox {
 	background: $roseWhite-color;
-	width: 100%;
+
 	border-radius: 10px;
+	border-bottom: none;
 
 	& div {
 		padding: 20px;
 	}
+
+	@media screen and (max-width: 375px) {
+		margin: 0 20px;
+	}
 }
 
 .tableBox {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
 	width: 100%;
+	& > div {
+		@media screen and (max-width: 375px) {
+			padding: 20px;
+		}
+	}
 }
 
 table {
 	width: 100%;
 	border-collapse: collapse;
+
 	& caption {
 		text-align: left;
 		line-height: 1.5;
 		font: $secondaryFont-light;
 		padding-bottom: 20px;
+		@media screen and (max-width: 375px) {
+			text-align: center;
+		}
 	}
 
 	& tr {
 		text-align: left;
 		border-bottom: 1px solid $lightGrey-color;
+		@media screen and (max-width: 375px) {
+			text-align: center;
+		}
 	}
 
 	& th {
@@ -118,6 +175,7 @@ table {
 		color: $primary-color;
 	}
 }
+
 // $primaryFont-light: 400 16px "YoungSerif", "sans-serif";
 // $secondaryFont-light: 400 16px "Outfit", "sans-serif";
 // $secondaryFont: 600 16px "Outfit", "sans-serif";
